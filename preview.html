@@ -10,205 +10,143 @@
     ></script>
     <script src="preview.js"></script>
   </head>
-  <body>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        background-color: #f6f9fe;
-      }
-      .container {
-        max-width: 600px;
-        margin: 20px auto;
-        /* background: #fff; */
-        padding: 20px;
-        border: 1px solid #e0e0e0;
-      }
-      h2 {
-        font-size: 16px;
-        font-weight: normal;
-        margin-bottom: 10px;
-      }
-      .data-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-      }
-      .data-table th,
-      .data-table td {
-        border: 1px solid #000000;
-        padding: 8px;
-        font-size: 13px;
-        letter-spacing: 0.01em;
-        font-weight: bold;
-      }
-      .data-table th {
-        background: #f1f1f1;
-        font-weight: bold;
-      }
-      .info {
-        font-size: 14px;
-        margin: 10px 0;
-      }
-      .signature {
-        margin-top: 30px;
-        font-size: 14px;
-      }
-      .sig-flex {
-        display: flex;
-        padding-top: 15px;
-      }
-      .sig-left {
-        max-width: 140px;
-        flex: 1;
-      }
-      .sig-center {
-        flex: 1;
-      }
-      .sig-right {
-        flex: 2;
-        margin-left: 20px;
-        padding-left: 20px;
-        box-sizing: border-box;
-        border-left: 1px solid #000000;
-      }
-      .sig-center img.logo {
-        max-width: 150px;
-        max-height: 150px;
-      }
-
-      .sig-right h3 {
-        margin: 0 0 5px;
-        font-size: 16px;
-        color: #000;
-      }
-      .sig-right p,
-      .sig-right small {
-        margin: 7px 0 0;
-        font-size: 14px;
-        letter-spacing: 0.1px;
-        line-height: 1.4;
-      }
-      .social-icons {
-        text-align: center;
-      }
-      .social-icons a {
-        text-decoration: none;
-      }
-      .social-icons img {
-        max-width: 20px;
-        max-height: 20px;
-        margin-right: 5px;
-        vertical-align: middle;
-      }
-      .site-description {
-        background-color: #ffffff;
-      }
-      .fs-14 {
-        font-size: 14px;
-      }
-      .color-0 {
-        color: #939495;
-      }
-      .mail-id {
-        color: #5c7dcd;
-        text-decoration: none;
-      }
-      .designation {
-        color: #929698;
-      }
-      .talk-us {
-        font-size: 24px !important;
-        color: #000000;
-      }
-      .site-link {
-        font-size: 14px;
-        text-align: center;
-      }
-      .imp-text {
-        color: #ff0000;
-      }
-      .address {
-        font-size: 12px;
-        color: #000000;
-      }
-      .email-address {
-        font-size: 12px;
-        color: #000000;
-      }
-      .mini-icon {
-        max-width: 20px;
-        max-height: 20px;
-        vertical-align: middle;
-      }
-      .mini-icon-text {
-        font-size: 13px;
-        color: #000000;
-      }
-      .clients-mini-icon {
-        max-width: 20px;
-        max-height: 20px;
-        vertical-align: middle;
-      }
-      .footer-msg {
-        font-size: 12px;
-        color: #7d8184;
-        margin-top: 20px;
-      }
-    </style>
-
-    <div class="container">
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f9fe;
+    "
+  >
+    <div style="width: 600px; min-width: 600px; padding: 20px">
       <!-- Signature -->
-      <div class="signature">
-        <div class="sig-flex">
-          <div class="sig-left">
-            <p class="talk-us">
+      <div style="margin-top: 30px; font-size: 14px">
+        <div style="display: flex; padding-top: 15px">
+          <div style="max-width: 140px; flex: 1">
+            <p style="font-size: 24px !important; color: #000000">
               <strong>TALK TO US FOR MORE AND MORE ROIs</strong>
             </p>
           </div>
-          <div class="sig-center">
+          <div style="flex: 1">
             <img
               class="logo company-logo"
               src="assets/logo.avif"
               alt="Adinn Logo"
+              style="max-width: 150px; max-height: 150px"
             />
-            <p class="site-link company-website">www.adinn.com</p>
-            <div class="social-icons">
-              <a href="#" class="company-facebook">
-                <img src="assets/facebook.png" alt="Facebook" />
+            <p
+              style="font-size: 14px; text-align: center"
+              class="company-website"
+            >
+              www.adinn.com
+            </p>
+            <div style="text-align: center">
+              <a
+                href="#"
+                class="company-facebook"
+                style="text-decoration: none"
+              >
+                <img
+                  src="assets/facebook.png"
+                  alt="Facebook"
+                  style="
+                    max-width: 20px;
+                    max-height: 20px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                  "
+                />
               </a>
-              <a href="#" class="company-twitter">
-                <img src="assets/twitter.png" alt="Twitter" />
+              <a href="#" class="company-twitter" style="text-decoration: none">
+                <img
+                  src="assets/twitter.png"
+                  alt="Twitter"
+                  style="
+                    max-width: 20px;
+                    max-height: 20px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                  "
+                />
               </a>
-              <a href="#" class="company-linkedin">
-                <img src="assets/linkedin.png" alt="LinkedIn" />
+              <a
+                href="#"
+                class="company-linkedin"
+                style="text-decoration: none"
+              >
+                <img
+                  src="assets/linkedin.png"
+                  alt="LinkedIn"
+                  style="
+                    max-width: 20px;
+                    max-height: 20px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                  "
+                />
               </a>
             </div>
           </div>
-          <div class="sig-right">
-            <h3 class="company-name">ADINN ADVERTISING SERVICES LTD.</h3>
-            <p class="imp-text company-services">
+          <div
+            style="
+              flex: 2;
+              margin-left: 20px;
+              padding-left: 20px;
+              box-sizing: border-box;
+              border-left: 1px solid #000000;
+            "
+          >
+            <h3
+              style="margin: 0 0 5px; font-size: 16px; color: #000"
+              class="company-name"
+            >
+              ADINN ADVERTISING SERVICES LTD.
+            </h3>
+            <p style="color: #ff0000" class="company-services">
               ATL, BTL, Digital Marketing, Outdoor Media Solutions, Media Buying
               and Planning, Roadshow & Rural Engagement Solutions, Exhibition
               Services, Retail Branding & Signage Solutions
             </p>
-            <p class="address company-address">
+            <p style="font-size: 12px; color: #000000" class="company-address">
               REGISTERED OFFICE: No. 29, 1st Cross Street, Vanamamalai Nagar,
               Bypass Road, Madurai-625010. Tel: 0452 - 4344800801
             </p>
-            <p class="address company-branches">Chennai | Bangalore | Kerala</p>
+            <p style="font-size: 12px; color: #000000" class="company-branches">
+              Chennai | Bangalore | Kerala
+            </p>
             <p>
-              <span class="email-address">
-                <img class="mini-icon" src="assets/website.png" alt="Website" />
-                <span class="mini-icon-text company-website"
+              <span style="font-size: 12px; color: #000000">
+                <img
+                  class="mini-icon"
+                  src="assets/website.png"
+                  alt="Website"
+                  style="
+                    max-width: 20px;
+                    max-height: 20px;
+                    vertical-align: middle;
+                  "
+                />
+                <span
+                  style="font-size: 13px; color: #000000"
+                  class="company-website"
                   >www.adinn.com</span
                 >
               </span>
-              <span class="email-address">
-                <img class="mini-icon" src="assets/mail.png" alt="mail" />
-                <span class="mini-icon-text company-mail"
+              <span style="font-size: 12px; color: #000000">
+                <img
+                  class="mini-icon"
+                  src="assets/mail.png"
+                  alt="mail"
+                  style="
+                    max-width: 20px;
+                    max-height: 20px;
+                    vertical-align: middle;
+                  "
+                />
+                <span
+                  style="font-size: 13px; color: #000000"
+                  class="company-mail"
                   >info@adinn.co.in</span
                 >
               </span>
@@ -218,26 +156,46 @@
                 class="clients-mini-icon partner-company-1"
                 src="assets/3m.png"
                 alt="clients"
+                style="
+                  max-width: 20px;
+                  max-height: 20px;
+                  vertical-align: middle;
+                "
               />
               <img
                 class="clients-mini-icon partner-company-2"
                 src="assets/3m.png"
                 alt="clients"
+                style="
+                  max-width: 20px;
+                  max-height: 20px;
+                  vertical-align: middle;
+                "
               />
               <img
                 class="clients-mini-icon partner-company-3"
                 src="assets/3m.png"
                 alt="clients"
+                style="
+                  max-width: 20px;
+                  max-height: 20px;
+                  vertical-align: middle;
+                "
               />
               <img
                 class="clients-mini-icon partner-company-4"
                 src="assets/3m.png"
                 alt="clients"
+                style="
+                  max-width: 20px;
+                  max-height: 20px;
+                  vertical-align: middle;
+                "
               />
             </p>
           </div>
         </div>
-        <div class="footer-msg">
+        <div style="font-size: 12px; color: #7d8184; margin-top: 20px">
           The content of this email is confidential and intended for the
           recipient specified in message only. It is strictly forbidden to share
           any part of this message with any third party, without a written
