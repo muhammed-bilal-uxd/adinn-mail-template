@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "netlify:dev": "netlify dev",
-    "netlify:build": "netlify build"
+    "dev": "netlify dev",
+    "build": "netlify build",
+    "deploy": "netlify deploy --prod"
   },
   "repository": {
     "type": "git",

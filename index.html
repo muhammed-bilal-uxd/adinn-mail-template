@@ -2,278 +2,191 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Campaign Confirmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="custom.js"></script>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        background-color: #f6f9fe;
-      }
-      .container {
-        max-width: 600px;
+      .form-container {
+        max-width: 800px;
         margin: 20px auto;
-        /* background: #fff; */
-        padding: 20px;
-        border: 1px solid #e0e0e0;
       }
-      h2 {
-        font-size: 16px;
-        font-weight: normal;
-        margin-bottom: 10px;
-      }
-      .data-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-      }
-      .data-table th,
-      .data-table td {
-        border: 1px solid #000000;
-        padding: 8px;
-        font-size: 13px;
-        letter-spacing: 0.01em;
-        font-weight: bold;
-      }
-      .data-table th {
-        background: #f1f1f1;
-        font-weight: bold;
-      }
-      .info {
-        font-size: 14px;
-        margin: 10px 0;
-      }
-      .signature {
-        margin-top: 30px;
-        font-size: 14px;
-      }
-      .sig-flex {
+      .form-row {
         display: flex;
-        padding-top: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
       }
-      .sig-left {
-        max-width: 140px;
+      .form-row label {
+        width: 200px;
+        padding-right: 20px;
+        font-weight: bold;
+        text-align: right;
+      }
+      .form-row input,
+      .form-row textarea {
         flex: 1;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
       }
-      .sig-center {
-        flex: 1;
+      .form-row textarea {
+        min-height: 80px;
+        resize: vertical;
       }
-      .sig-right {
-        flex: 2;
-        margin-left: 20px;
-        padding-left: 20px;
-        box-sizing: border-box;
-        border-left: 1px solid #000000;
-      }
-      .sig-center img.logo {
-        max-width: 150px;
-        max-height: 150px;
-      }
-
-      .sig-right h3 {
-        margin: 0 0 5px;
-        font-size: 16px;
-        color: #000;
-      }
-      .sig-right p,
-      .sig-right small {
-        margin: 7px 0 0;
-        font-size: 14px;
-        letter-spacing: 0.1px;
-        line-height: 1.4;
-      }
-      .social-icons {
-        text-align: center;
-      }
-      .social-icons a {
-        text-decoration: none;
-      }
-      .social-icons img {
-        max-width: 20px;
-        max-height: 20px;
-        margin-right: 5px;
-        vertical-align: middle;
-      }
-      .site-description {
-        background-color: #ffffff;
-      }
-      .fs-14 {
-        font-size: 14px;
-      }
-      .color-0 {
-        color: #939495;
-      }
-      .mail-id {
-        color: #5c7dcd;
-        text-decoration: none;
-      }
-      .designation {
-        color: #929698;
-      }
-      .talk-us {
-        font-size: 24px !important;
-        color: #000000;
-      }
-      .site-link {
-        font-size: 14px;
-        text-align: center;
-      }
-      .imp-text {
-        color: #ff0000;
-      }
-      .address {
-        font-size: 12px;
-        color: #000000;
-      }
-      .email-address {
-        font-size: 12px;
-        color: #000000;
-      }
-      .mini-icon {
-        max-width: 20px;
-        max-height: 20px;
-        vertical-align: middle;
-      }
-      .mini-icon-text {
-        font-size: 13px;
-        color: #000000;
-      }
-      .clients-mini-icon {
-        max-width: 20px;
-        max-height: 20px;
-        vertical-align: middle;
-      }
-      .footer-msg {
-        font-size: 12px;
-        color: #7d8184;
+      .submit-row {
+        display: flex;
+        justify-content: center;
         margin-top: 20px;
+      }
+      .submit-row button {
+        padding: 10px 30px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .submit-row button:hover {
+        background-color: #45a049;
+      }
+      .page-title {
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <!-- Greeting -->
-      <h2 class="fs-14">Dear Sir,</h2>
-      <p class="fs-14">
-        Please confirm the below mentioned locations. We will share the flex
-        shortly.
-      </p>
-
-      <!-- Data Table -->
-      <table class="data-table">
-        <!-- <tr>
-          <th>Location</th>
-          <th>Media Type</th>
-          <th>Site Description</th>
-          <th>Qty</th>
-          <th>Days</th>
-          <th>Lit Type</th>
-          <th>Rate (₹)</th>
-        </tr> -->
-        <tr>
-          <td>Kanchipuram</td>
-          <td>Hoarding</td>
-          <td class="site-description">Near Gujarat Chathiram</td>
-          <td>1</td>
-          <td>20</td>
-          <td>20</td>
-          <td>Non-lit</td>
-          <td>400</td>
-        </tr>
-      </table>
-
-      <!-- Campaign Info -->
-      <p class="info">Campaign Start: 01.05.2025</p>
-      <p class="info">Duration: 15 Days</p>
-
-      <!-- Signature -->
-      <div class="signature">
-        <p>
-          <strong class="color-0">Thanks &amp; Regards</strong><br /><br />
-          <span class="designation">S.Jai Suriya - Media Planning</span
-          ><br /><br />
-          <strong class="color-0">Mail Id : </strong>
-          <a class="mail-id" href="mailto:mediaplannigooh1@adinn.co.in">
-            mediaplannigooh1@adinn.co.in
-          </a>
-        </p>
-        <div class="sig-flex">
-          <div class="sig-left">
-            <p class="talk-us">
-              <strong>TALK TO US FOR MORE AND MORE ROIs</strong>
-            </p>
-          </div>
-          <div class="sig-center">
-            <img class="logo" src="assets/logo.avif" alt="Adinn Logo" />
-            <p class="site-link">www.adinn.com</p>
-            <div class="social-icons">
-              <a href="#">
-                <img src="assets/facebook.png" alt="Facebook" />
-              </a>
-              <a href="#">
-                <img src="assets/twitter.png" alt="Twitter" />
-              </a>
-              <a href="#">
-                <img src="assets/linkedin.png" alt="LinkedIn" />
-              </a>
-            </div>
-          </div>
-          <div class="sig-right">
-            <h3>ADINN ADVERTISING SERVICES LTD.</h3>
-            <p class="imp-text">
-              ATL, BTL, Digital Marketing, Outdoor Media Solutions, Media Buying
-              and Planning, Roadshow & Rural Engagement Solutions, Exhibition
-              Services, Retail Branding & Signage Solutions
-            </p>
-            <p class="address">
-              REGISTERED OFFICE: No. 29, 1st Cross Street, Vanamamalai Nagar,
-              Bypass Road, Madurai-625010. Tel: 0452 - 4344800801
-            </p>
-            <p class="address">Chennai | Bangalore | Kerala</p>
-            <p>
-              <span class="email-address">
-                <img class="mini-icon" src="assets/website.png" alt="Website" />
-                <span class="mini-icon-text">www.adinn.com</span>
-              </span>
-              <span class="email-address">
-                <img class="mini-icon" src="assets/mail.png" alt="mail" />
-                <span class="mini-icon-text">info@adinn.co.in</span>
-              </span>
-            </p>
-            <p>
-              <img
-                class="clients-mini-icon"
-                src="assets/3m.png"
-                alt="clients"
-              />
-              <img
-                class="clients-mini-icon"
-                src="assets/3m.png"
-                alt="clients"
-              />
-              <img
-                class="clients-mini-icon"
-                src="assets/3m.png"
-                alt="clients"
-              />
-              <img
-                class="clients-mini-icon"
-                src="assets/3m.png"
-                alt="clients"
-              />
-            </p>
-          </div>
+    <h1 class="page-title">Mail Template Generator</h1>
+    <form id="myForm">
+      <div class="form-container">
+        <div class="form-row">
+          <label for="companyName">Company Name:</label>
+          <input
+            type="text"
+            id="companyName"
+            name="companyName"
+            value="ADINN ADVERTISING SERVICES LTD."
+          />
         </div>
-        <div class="footer-msg">
-          The content of this email is confidential and intended for the
-          recipient specified in message only. It is strictly forbidden to share
-          any part of this message with any third party, without a written
-          consent of the sender. If you received this message by mistage, please
-          reply to this message and follow with its deletion, so that we can
-          ensure such a mistake does not occur in the future.
+        <div class="form-row">
+          <label for="companyLogo">Company Logo Link:</label>
+          <input
+            type="text"
+            id="companyLogo"
+            name="companyLogo"
+            value="assets/logo.avif"
+          />
+        </div>
+        <div class="form-row">
+          <label for="websiteLink">Website Link:</label>
+          <input
+            type="text"
+            id="websiteLink"
+            name="websiteLink"
+            value="https://www.adinn.com"
+          />
+        </div>
+        <div class="form-row">
+          <label for="facebookLink">Facebook Link:</label>
+          <input
+            type="text"
+            id="facebookLink"
+            name="facebookLink"
+            value="https://facebook.com/adinn"
+          />
+        </div>
+        <div class="form-row">
+          <label for="twitterLink">Twitter/X Link:</label>
+          <input
+            type="text"
+            id="twitterLink"
+            name="twitterLink"
+            value="https://twitter.com/adinn"
+          />
+        </div>
+        <div class="form-row">
+          <label for="linkedinLink">LinkedIn Link:</label>
+          <input
+            type="text"
+            id="linkedinLink"
+            name="linkedinLink"
+            value="https://linkedin.com/company/adinn"
+          />
+        </div>
+        <div class="form-row">
+          <label for="companyMail">Company Email:</label>
+          <input
+            type="email"
+            id="companyMail"
+            name="companyMail"
+            value="info@adinn.co.in"
+          />
+        </div>
+        <div class="form-row">
+          <label for="companyServices">Company Services:</label>
+          <textarea id="companyServices" name="companyServices">
+ATL, BTL, Digital Marketing, Outdoor Media Solutions, Media Buying and Planning, Roadshow & Rural Engagement Solutions, Exhibition Services, Retail Branding & Signage Solutions</textarea
+          >
+        </div>
+        <div class="form-row">
+          <label for="companyBranches">Company Branches:</label>
+          <input
+            type="text"
+            id="companyBranches"
+            name="companyBranches"
+            value="Chennai | Bangalore | Kerala"
+          />
+        </div>
+        <div class="form-row">
+          <label for="companyAddress">Company Address:</label>
+          <textarea id="companyAddress" name="companyAddress">
+REGISTERED OFFICE: No. 29, 1st Cross Street, Vanamamalai Nagar, Bypass Road, Madurai-625010. Tel: 0452 - 4344800801</textarea
+          >
+        </div>
+        <div class="form-row">
+          <label for="partnerCompany1">Partnership Company 1:</label>
+          <input
+            type="text"
+            id="partnerCompany1"
+            name="partnerCompany1"
+            value="3M"
+          />
+        </div>
+        <div class="form-row">
+          <label for="partnerCompany2">Partnership Company 2:</label>
+          <input
+            type="text"
+            id="partnerCompany2"
+            name="partnerCompany2"
+            value="Microsoft"
+          />
+        </div>
+        <div class="form-row">
+          <label for="partnerCompany3">Partnership Company 3:</label>
+          <input
+            type="text"
+            id="partnerCompany3"
+            name="partnerCompany3"
+            value="Google"
+          />
+        </div>
+        <div class="form-row">
+          <label for="partnerCompany4">Partnership Company 4:</label>
+          <input
+            type="text"
+            id="partnerCompany4"
+            name="partnerCompany4"
+            value="Amazon"
+          />
+        </div>
+        <div class="submit-row">
+          <button type="submit">Submit</button>
         </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>
