@@ -59,167 +59,139 @@
       }
     </style>
   </head>
-  <body>
-    <div
-      style="
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px;
-      "
-    >
-      <span></span>
-      <h1 class="page-title">Mail Template Generator</h1>
-      <a
-        href="https://www.base64-image.de/"
-        target="_blank"
-        style="text-decoration: none"
+  <body style="margin: 0; padding: 0">
+    <div class="input-container">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 20px;
+        "
       >
-        <button
-          id="generateTemplate"
-          style="
-            padding: 10px 20px;
-            background: linear-gradient(45deg, #2196f3, #1976d2);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 500;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            cursor: pointer;
-          "
-        >
-          Generate Data URL Images
-        </button>
-      </a>
-    </div>
-    <form id="myForm">
+        <span></span>
+        <h1 class="page-title">Mail Template Generator</h1>
+        <div>
+          <!-- <a
+            href="https://www.base64-image.de/"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <button
+              id="generateTemplate"
+              style="
+                padding: 10px 20px;
+                background: linear-gradient(45deg, #2196f3, #1976d2);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 14px;
+                font-weight: 500;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+                cursor: pointer;
+              "
+            >
+              Generate Data URL Images
+            </button>
+          </a> -->
+          <button
+            id="dummyData"
+            style="
+              padding: 10px 20px;
+              background: linear-gradient(45deg, #2196f3, #1976d2);
+              color: white;
+              border: none;
+              border-radius: 6px;
+              font-size: 14px;
+              font-weight: 500;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              transition: all 0.3s ease;
+              cursor: pointer;
+            "
+          >
+            Generate Dummy Data
+          </button>
+        </div>
+      </div>
       <div class="form-container">
         <div class="form-row">
           <label for="companyName">Company Name:</label>
-          <input
-            type="text"
-            id="companyName"
-            name="companyName"
-            value="ADINN ADVERTISING SERVICES LTD."
-          />
+          <input type="text" id="companyName" name="companyName" />
         </div>
         <div class="form-row">
           <label for="companyLogo">Company Logo Link:</label>
-          <input
-            type="text"
-            id="companyLogo"
-            name="companyLogo"
-            value="assets/logo.avif"
-          />
+          <input type="text" id="companyLogo" name="companyLogo" />
         </div>
         <div class="form-row">
           <label for="websiteLink">Website Link:</label>
-          <input
-            type="text"
-            id="websiteLink"
-            name="websiteLink"
-            value="https://www.adinn.com"
-          />
+          <input type="text" id="websiteLink" name="websiteLink" />
         </div>
         <div class="form-row">
           <label for="facebookLink">Facebook Link:</label>
-          <input
-            type="text"
-            id="facebookLink"
-            name="facebookLink"
-            value="https://facebook.com/adinn"
-          />
+          <input type="text" id="facebookLink" name="facebookLink" />
         </div>
         <div class="form-row">
           <label for="twitterLink">Twitter/X Link:</label>
-          <input
-            type="text"
-            id="twitterLink"
-            name="twitterLink"
-            value="https://twitter.com/adinn"
-          />
+          <input type="text" id="twitterLink" name="twitterLink" />
         </div>
         <div class="form-row">
           <label for="linkedinLink">LinkedIn Link:</label>
-          <input
-            type="text"
-            id="linkedinLink"
-            name="linkedinLink"
-            value="https://linkedin.com/company/adinn"
-          />
+          <input type="text" id="linkedinLink" name="linkedinLink" />
         </div>
         <div class="form-row">
           <label for="companyMail">Company Email:</label>
-          <input
-            type="email"
-            id="companyMail"
-            name="companyMail"
-            value="info@adinn.co.in"
-          />
+          <input type="email" id="companyMail" name="companyMail" />
         </div>
         <div class="form-row">
           <label for="companyServices">Company Services:</label>
-          <textarea id="companyServices" name="companyServices">
-ATL, BTL, Digital Marketing, Outdoor Media Solutions, Media Buying and Planning, Roadshow & Rural Engagement Solutions, Exhibition Services, Retail Branding & Signage Solutions</textarea
-          >
+          <textarea id="companyServices" name="companyServices"></textarea>
         </div>
         <div class="form-row">
           <label for="companyBranches">Company Branches:</label>
-          <input
-            type="text"
-            id="companyBranches"
-            name="companyBranches"
-            value="Chennai | Bangalore | Kerala"
-          />
+          <input type="text" id="companyBranches" name="companyBranches" />
         </div>
         <div class="form-row">
           <label for="companyAddress">Company Address:</label>
-          <textarea id="companyAddress" name="companyAddress">
-REGISTERED OFFICE: No. 29, 1st Cross Street, Vanamamalai Nagar, Bypass Road, Madurai-625010. Tel: 0452 - 4344800801</textarea
-          >
+          <textarea id="companyAddress" name="companyAddress"></textarea>
         </div>
         <div class="form-row">
           <label for="partnerCompany1">Partnership Company 1:</label>
-          <input
-            type="text"
-            id="partnerCompany1"
-            name="partnerCompany1"
-            value="3M"
-          />
+          <input type="text" id="partnerCompany1" name="partnerCompany1" />
         </div>
         <div class="form-row">
           <label for="partnerCompany2">Partnership Company 2:</label>
-          <input
-            type="text"
-            id="partnerCompany2"
-            name="partnerCompany2"
-            value="Microsoft"
-          />
+          <input type="text" id="partnerCompany2" name="partnerCompany2" />
         </div>
         <div class="form-row">
           <label for="partnerCompany3">Partnership Company 3:</label>
-          <input
-            type="text"
-            id="partnerCompany3"
-            name="partnerCompany3"
-            value="Google"
-          />
+          <input type="text" id="partnerCompany3" name="partnerCompany3" />
         </div>
         <div class="form-row">
           <label for="partnerCompany4">Partnership Company 4:</label>
-          <input
-            type="text"
-            id="partnerCompany4"
-            name="partnerCompany4"
-            value="Amazon"
-          />
+          <input type="text" id="partnerCompany4" name="partnerCompany4" />
         </div>
         <div class="submit-row">
-          <button type="submit">Submit</button>
+          <!-- <button type="submit">Submit</button> -->
+          <button
+            id="previewTemplate"
+            style="
+              padding: 10px 20px;
+              background: linear-gradient(45deg, #2196f3, #1976d2);
+              color: white;
+              border: none;
+              border-radius: 6px;
+              font-size: 14px;
+              font-weight: 500;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              transition: all 0.3s ease;
+              cursor: pointer;
+            "
+          >
+            Preview Template
+          </button>
         </div>
       </div>
-    </form>
+    </div>
   </body>
 </html>

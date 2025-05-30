@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  getInitialData();
+  $("#copy-template").on("click", copyTemplate);
+});
+
+function getInitialData() {
   // Get URL parameters
   const urlParams = new URLSearchParams(window.location.search);
 
@@ -6,10 +11,10 @@ $(document).ready(function () {
   const paramMap = {
     companyName: ".company-name",
     companyLogo: ".company-logo",
-    websiteLink: ".website-link",
-    facebookLink: ".facebook-link",
-    twitterLink: ".twitter-link",
-    linkedinLink: ".linkedin-link",
+    websiteLink: ".company-website",
+    // facebookLink: ".facebook-link",
+    // twitterLink: ".twitter-link",
+    // linkedinLink: ".linkedin-link",
     companyMail: ".company-mail",
     companyServices: ".company-services",
     companyBranches: ".company-branches",
@@ -44,4 +49,22 @@ $(document).ready(function () {
   if (urlParams.get("linkedinLink")) {
     $(".linkedin-link").attr("href", urlParams.get("linkedinLink"));
   }
-});
+  // add partner company
+  if (urlParams.get("partnerCompany1")) {
+    $(".partner-company-1").attr("src", urlParams.get("partnerCompany1"));
+  }
+  if (urlParams.get("partnerCompany2")) {
+    $(".partner-company-2").attr("src", urlParams.get("partnerCompany2"));
+  }
+  if (urlParams.get("partnerCompany3")) {
+    $(".partner-company-3").attr("src", urlParams.get("partnerCompany3"));
+  }
+  if (urlParams.get("partnerCompany4")) {
+    $(".partner-company-4").attr("src", urlParams.get("partnerCompany4"));
+  }
+}
+
+function copyTemplate() {
+  const template = $(".template").html();
+  navigator.clipboard.writeText(template);
+}
