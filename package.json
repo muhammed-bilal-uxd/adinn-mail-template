@@ -1,5 +1,5 @@
 {
-  "name": "adinn-mail-template",
+  "name": "mail-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhammed-bilal-uxd/adinn-mail-template.git"
+    "url": "git+https://github.com/muhammed-bilal-uxd/mail-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/muhammed-bilal-uxd/adinn-mail-template/issues"
+    "url": "https://github.com/muhammed-bilal-uxd/mail-template/issues"
   },
-  "homepage": "https://github.com/muhammed-bilal-uxd/adinn-mail-template#readme"
+  "homepage": "https://github.com/muhammed-bilal-uxd/mail-template#readme"
 }
