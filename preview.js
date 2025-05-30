@@ -43,6 +43,7 @@ function getInitialData() {
     facebookLink: { selector: ".facebook-link", attr: "href" },
     twitterLink: { selector: ".twitter-link", attr: "href" },
     linkedinLink: { selector: ".linkedin-link", attr: "href" },
+    instagramLink: { selector: ".instagram-link", attr: "href" },
     partnerCompany1: { selector: ".partner-company-1", attr: "src" },
     partnerCompany2: { selector: ".partner-company-2", attr: "src" },
     partnerCompany3: { selector: ".partner-company-3", attr: "src" },
@@ -62,4 +63,5 @@ function getInitialData() {
 function copyTemplate() {
   const template = $(".template").html();
   navigator.clipboard.writeText(template);
+  alert("Template copied to clipboard successfully");
 }

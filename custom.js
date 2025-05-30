@@ -10,6 +10,7 @@ function getDataParams() {
     companyLogo: $("#companyLogo").val(),
     websiteLink: $("#websiteLink").val(),
     facebookLink: $("#facebookLink").val(),
+    instagramLink: $("#instagramLink").val(),
     twitterLink: $("#twitterLink").val(),
     linkedinLink: $("#linkedinLink").val(),
     companyMail: $("#companyMail").val(),
@@ -41,6 +42,7 @@ function generateDummyData() {
   $("#companyLogo").val(companyLogo);
   $("#websiteLink").val("https://techcorp-solutions.com");
   $("#facebookLink").val("https://facebook.com/techcorp");
+  $("#instagramLink").val("https://instagram.com/techcorp");
   $("#twitterLink").val("https://twitter.com/techcorp");
   $("#linkedinLink").val("https://linkedin.com/company/techcorp");
   $("#companyMail").val("contact@techcorp-solutions.com");
@@ -63,6 +65,7 @@ function getPreviewTemplate(data) {
     companyLogo,
     websiteLink,
     facebookLink,
+    instagramLink,
     twitterLink,
     linkedinLink,
     companyMail,
@@ -139,6 +142,22 @@ function getPreviewTemplate(data) {
                         <img
                           src="assets/facebook.png"
                           alt="Facebook"
+                          style="
+                            width: 20px;
+                            height: auto;
+                            margin-right: 5px;
+                            vertical-align: middle;
+                          "
+                        />
+                      </a>
+                       <a
+                        href="${instagramLink}"
+                        class="company-instagram"
+                        style="text-decoration: none"
+                      >
+                        <img
+                          src="assets/instagram.png"
+                          alt="Instagram"
                           style="
                             width: 20px;
                             height: auto;
