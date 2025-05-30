@@ -25,42 +25,37 @@ function getInitialData() {
     partnerCompany4: ".partner-company-4",
   };
 
-  // Set values from URL parameters
+  // Set values from URL parameters and hide elements if no data
   for (const [param, selector] of Object.entries(paramMap)) {
     const value = urlParams.get(param);
     if (value) {
-      $(selector).text(value);
+      $(selector).text(value).show();
+    } else {
+      $(selector).hide();
     }
   }
 
-  // Special handling for links
-  if (urlParams.get("companyLogo")) {
-    $(".company-logo").attr("src", urlParams.get("companyLogo"));
-  }
-  if (urlParams.get("websiteLink")) {
-    $(".website-link").attr("href", urlParams.get("websiteLink"));
-  }
-  if (urlParams.get("facebookLink")) {
-    $(".facebook-link").attr("href", urlParams.get("facebookLink"));
-  }
-  if (urlParams.get("twitterLink")) {
-    $(".twitter-link").attr("href", urlParams.get("twitterLink"));
-  }
-  if (urlParams.get("linkedinLink")) {
-    $(".linkedin-link").attr("href", urlParams.get("linkedinLink"));
-  }
-  // add partner company
-  if (urlParams.get("partnerCompany1")) {
-    $(".partner-company-1").attr("src", urlParams.get("partnerCompany1"));
-  }
-  if (urlParams.get("partnerCompany2")) {
-    $(".partner-company-2").attr("src", urlParams.get("partnerCompany2"));
-  }
-  if (urlParams.get("partnerCompany3")) {
-    $(".partner-company-3").attr("src", urlParams.get("partnerCompany3"));
-  }
-  if (urlParams.get("partnerCompany4")) {
-    $(".partner-company-4").attr("src", urlParams.get("partnerCompany4"));
+  // Special handling for links and images
+  const linkMap = {
+    companyLogo: { selector: ".company-logo", attr: "src" },
+    websiteLink: { selector: ".website-link", attr: "href" },
+    companyMail: { selector: ".company-mail-link", attr: "href" },
+    facebookLink: { selector: ".facebook-link", attr: "href" },
+    twitterLink: { selector: ".twitter-link", attr: "href" },
+    linkedinLink: { selector: ".linkedin-link", attr: "href" },
+    partnerCompany1: { selector: ".partner-company-1", attr: "src" },
+    partnerCompany2: { selector: ".partner-company-2", attr: "src" },
+    partnerCompany3: { selector: ".partner-company-3", attr: "src" },
+    partnerCompany4: { selector: ".partner-company-4", attr: "src" },
+  };
+
+  for (const [param, { selector, attr }] of Object.entries(linkMap)) {
+    const value = urlParams.get(param);
+    if (value) {
+      $(selector).attr(attr, value).show();
+    } else {
+      $(selector).hide();
+    }
   }
 }
 
