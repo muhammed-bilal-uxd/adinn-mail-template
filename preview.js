@@ -1,6 +1,6 @@
 $(document).ready(function () {
   getInitialData();
-  $("#copy-template").on("click", copyTemplate);
+  // $("#copy-template").on("click", copyTemplate);
 });
 
 function getInitialData() {
@@ -37,17 +37,23 @@ function getInitialData() {
 
   // Special handling for links and images
   const linkMap = {
-    companyLogo: { selector: ".company-logo", attr: "src" },
     websiteLink: { selector: ".website-link", attr: "href" },
     companyMail: { selector: ".company-mail-link", attr: "href" },
     facebookLink: { selector: ".facebook-link", attr: "href" },
     twitterLink: { selector: ".twitter-link", attr: "href" },
     linkedinLink: { selector: ".linkedin-link", attr: "href" },
     instagramLink: { selector: ".instagram-link", attr: "href" },
+    companyLogo: { selector: ".company-logo", attr: "src" },
     partnerCompany1: { selector: ".partner-company-1", attr: "src" },
     partnerCompany2: { selector: ".partner-company-2", attr: "src" },
     partnerCompany3: { selector: ".partner-company-3", attr: "src" },
     partnerCompany4: { selector: ".partner-company-4", attr: "src" },
+    websiteLogo: { selector: ".website-logo", attr: "src" },
+    facebookLogo: { selector: ".facebook-logo", attr: "src" },
+    instagramLogo: { selector: ".instagram-logo", attr: "src" },
+    twitterLogo: { selector: ".twitter-logo", attr: "src" },
+    linkedinLogo: { selector: ".linkedin-logo", attr: "src" },
+    companyMailLogo: { selector: ".company-mail-logo", attr: "src" },
   };
 
   for (const [param, { selector, attr }] of Object.entries(linkMap)) {

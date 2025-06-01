@@ -57,6 +57,13 @@
       .page-title {
         text-align: center;
       }
+      .group-row {
+        padding: 20px 10px;
+        border-radius: 5px;
+        overflow: auto;
+        background-color: #f0f0f0;
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body style="margin: 0; padding: 0">
@@ -115,66 +122,114 @@
         </div>
       </div>
       <div class="form-container">
-        <div class="form-row">
-          <label for="companyName">Company Name:</label>
-          <input type="text" id="companyName" name="companyName" />
+        <div class="group-row">
+          <div class="form-row">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" />
+          </div>
+          <div class="form-row">
+            <label for="companyLogo">Company Logo Link:</label>
+            <input type="text" id="companyLogo" name="companyLogo" />
+          </div>
+          <div class="form-row">
+            <label for="websiteLink">Website Link:</label>
+            <input type="text" id="websiteLink" name="websiteLink" />
+          </div>
+          <div class="form-row">
+            <label for="facebookLink">Facebook Link:</label>
+            <input type="text" id="facebookLink" name="facebookLink" />
+          </div>
+          <div class="form-row">
+            <label for="instagramLink">Instagram Link:</label>
+            <input type="text" id="instagramLink" name="instagramLink" />
+          </div>
+          <div class="form-row">
+            <label for="twitterLink">Twitter Link:</label>
+            <input type="text" id="twitterLink" name="twitterLink" />
+          </div>
+          <div class="form-row">
+            <label for="linkedinLink">LinkedIn Link:</label>
+            <input type="text" id="linkedinLink" name="linkedinLink" />
+          </div>
+          <div class="form-row">
+            <label for="companyMail">Company Email:</label>
+            <input type="email" id="companyMail" name="companyMail" />
+          </div>
+          <div class="form-row">
+            <label for="companyServices">Company Services:</label>
+            <textarea id="companyServices" name="companyServices"></textarea>
+          </div>
+          <div class="form-row">
+            <label for="companyBranches">Company Branches:</label>
+            <input type="text" id="companyBranches" name="companyBranches" />
+          </div>
+          <div class="form-row">
+            <label for="companyAddress">Company Address:</label>
+            <textarea id="companyAddress" name="companyAddress"></textarea>
+          </div>
         </div>
-        <div class="form-row">
-          <label for="companyLogo">Company Logo Link:</label>
-          <input type="text" id="companyLogo" name="companyLogo" />
+
+        <div class="group-row">
+          <div class="form-row">
+            <label for="partnerCompany1">Partner Company 1 Logo:</label>
+            <input type="text" id="partnerCompany1" name="partnerCompany1" />
+          </div>
+          <div class="form-row">
+            <label for="partnerCompany2">Partner Company 2 Logo:</label>
+            <input type="text" id="partnerCompany2" name="partnerCompany2" />
+          </div>
+          <div class="form-row">
+            <label for="partnerCompany3">Partner Company 3 Logo:</label>
+            <input type="text" id="partnerCompany3" name="partnerCompany3" />
+          </div>
+          <div class="form-row">
+            <label for="partnerCompany4">Partner Company 4 Logo:</label>
+            <input type="text" id="partnerCompany4" name="partnerCompany4" />
+          </div>
         </div>
-        <div class="form-row">
-          <label for="websiteLink">Website Link:</label>
-          <input type="text" id="websiteLink" name="websiteLink" />
+        <div class="group-row">
+          <div class="form-row">
+            <label for="websiteLogo">Website Logo Image Link:</label>
+            <input type="text" id="websiteLogo" name="websiteLogo" />
+          </div>
+
+          <div class="form-row">
+            <label for="facebookLogo">Facebook Logo Image Link:</label>
+            <input type="text" id="facebookLogo" name="facebookLogo" />
+          </div>
+
+          <div class="form-row">
+            <label for="instagramLogo">Instagram Logo Image Link:</label>
+            <input type="text" id="instagramLogo" name="instagramLogo" />
+          </div>
+
+          <div class="form-row">
+            <label for="twitterLogo">Twitter Logo Image Link:</label>
+            <input type="text" id="twitterLogo" name="twitterLogo" />
+          </div>
+
+          <div class="form-row">
+            <label for="linkedinLogo">LinkedIn Logo Image Link:</label>
+            <input type="text" id="linkedinLogo" name="linkedinLogo" />
+          </div>
+
+          <div class="form-row">
+            <label for="companyMailLogo">Company Mail Logo Image Link:</label>
+            <input type="text" id="companyMailLogo" name="companyMailLogo" />
+          </div>
+
+          <div class="form-row">
+            <label for="companyWebsiteLogo"
+              >Company Website Logo Image Link:</label
+            >
+            <input
+              type="text"
+              id="companyWebsiteLogo"
+              name="companyWebsiteLogo"
+            />
+          </div>
         </div>
-        <div class="form-row">
-          <label for="facebookLink">Facebook Link:</label>
-          <input type="text" id="facebookLink" name="facebookLink" />
-        </div>
-        <div class="form-row">
-          <label for="instagramLink">Instagram Link:</label>
-          <input type="text" id="instagramLink" name="instagramLink" />
-        </div>
-        <div class="form-row">
-          <label for="twitterLink">Twitter Link:</label>
-          <input type="text" id="twitterLink" name="twitterLink" />
-        </div>
-        <div class="form-row">
-          <label for="linkedinLink">LinkedIn Link:</label>
-          <input type="text" id="linkedinLink" name="linkedinLink" />
-        </div>
-        <div class="form-row">
-          <label for="companyMail">Company Email:</label>
-          <input type="email" id="companyMail" name="companyMail" />
-        </div>
-        <div class="form-row">
-          <label for="companyServices">Company Services:</label>
-          <textarea id="companyServices" name="companyServices"></textarea>
-        </div>
-        <div class="form-row">
-          <label for="companyBranches">Company Branches:</label>
-          <input type="text" id="companyBranches" name="companyBranches" />
-        </div>
-        <div class="form-row">
-          <label for="companyAddress">Company Address:</label>
-          <textarea id="companyAddress" name="companyAddress"></textarea>
-        </div>
-        <div class="form-row">
-          <label for="partnerCompany1">Partner Company 1 Logo:</label>
-          <input type="text" id="partnerCompany1" name="partnerCompany1" />
-        </div>
-        <div class="form-row">
-          <label for="partnerCompany2">Partner Company 2 Logo:</label>
-          <input type="text" id="partnerCompany2" name="partnerCompany2" />
-        </div>
-        <div class="form-row">
-          <label for="partnerCompany3">Partner Company 3 Logo:</label>
-          <input type="text" id="partnerCompany3" name="partnerCompany3" />
-        </div>
-        <div class="form-row">
-          <label for="partnerCompany4">Partner Company 4 Logo:</label>
-          <input type="text" id="partnerCompany4" name="partnerCompany4" />
-        </div>
+
         <div class="submit-row">
           <!-- <button type="submit">Submit</button> -->
           <button
