@@ -19,10 +19,10 @@ function getInitialData() {
     companyServices: ".company-services",
     companyBranches: ".company-branches",
     companyAddress: ".company-address",
-    partnerCompany1: ".partner-company-1",
-    partnerCompany2: ".partner-company-2",
-    partnerCompany3: ".partner-company-3",
-    partnerCompany4: ".partner-company-4",
+    // partnerCompany1: ".partner-company-1",
+    // partnerCompany2: ".partner-company-2",
+    // partnerCompany3: ".partner-company-3",
+    // partnerCompany4: ".partner-company-4",
   };
 
   // Set values from URL parameters and hide elements if no data
@@ -37,8 +37,8 @@ function getInitialData() {
 
   // Special handling for links and images
   const linkMap = {
-    websiteLink: { selector: ".website-link", attr: "href" },
-    companyMail: { selector: ".company-mail-link", attr: "href" },
+    // websiteLink: { selector: ".website-link", attr: "href" },
+    // companyMail: { selector: ".company-mail-link", attr: "href" },
     facebookLink: { selector: ".facebook-link", attr: "href" },
     twitterLink: { selector: ".twitter-link", attr: "href" },
     linkedinLink: { selector: ".linkedin-link", attr: "href" },

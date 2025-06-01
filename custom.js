@@ -47,7 +47,6 @@ function generateDummyData() {
 
   // Set dummy data for all form fields
   $("#companyName").val("TechCorp Solutions Pvt Ltd");
-  $("#companyLogo").val(companyLogo);
   $("#websiteLink").val("https://techcorp-solutions.com");
   $("#facebookLink").val("https://facebook.com/techcorp");
   $("#instagramLink").val("https://instagram.com/techcorp");
@@ -61,11 +60,13 @@ function generateDummyData() {
   $("#companyAddress").val(
     "123 Tech Plaza\nSuite 500\nNew York, NY 10001\nUnited States"
   );
+
   $("#partnerCompany1").val(partnerCompany);
   $("#partnerCompany2").val(partnerCompany);
   $("#partnerCompany3").val(partnerCompany);
   $("#partnerCompany4").val(partnerCompany);
 
+  $("#companyLogo").val(companyLogo);
   $("#websiteLogo").val(websiteLogo);
   $("#facebookLogo").val(facebookLogo);
   $("#instagramLogo").val(instagramLogo);
