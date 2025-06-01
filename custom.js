@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $("#dummyData").on("click", generateDummyData);
   $("#previewTemplate").on("click", previewTemplate);
+  $(".download-logo").on("click", downloadImage);
 });
 
 function getDataParams() {
@@ -93,4 +94,38 @@ function previewTemplate() {
 
   // Open preview in new tab/window
   window.open(`preview.html?${params.toString()}`, "_blank");
+}
+
+function downloadImage(event) {
+  event.preventDefault();
+  const button = event.currentTarget;
+  const imageId = button.getAttribute("data-download-logo");
+  const imageUrl = assetImageUrl(imageId);
+
+  if (imageUrl) {
+    const link = document.createElement("a");
+    link.href = imageUrl;
+    link.download = `${imageId}.png`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } else {
+    console.error("Image URL not found for:", imageId);
+  }
+}
+
+function assetImageUrl(imageId) {
+  const currentUrl = window.location.href;
+  const baseUrl = currentUrl.substring(0, currentUrl.lastIndexOf("/") + 1);
+
+  const images = {
+    websiteLogo: "website.png",
+    facebookLogo: "facebook.png",
+    instagramLogo: "instagram.png",
+    twitterLogo: "twitter.png",
+    linkedinLogo: "linkedin.png",
+    companyMailLogo: "mail.png",
+    companyWebsiteLogo: "website.png",
+  };
+  return `${baseUrl}assets/${images[imageId]}`;
 }

@@ -64,6 +64,12 @@
         background-color: #f0f0f0;
         margin-bottom: 20px;
       }
+      .group-row h2 {
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        color: blue;
+        text-align: center;
+      }
     </style>
   </head>
   <body style="margin: 0; padding: 0">
@@ -123,10 +129,31 @@
       </div>
       <div class="form-container">
         <div class="group-row">
+          <h2>Add company details below</h2>
           <div class="form-row">
             <label for="companyName">Company Name:</label>
             <input type="text" id="companyName" name="companyName" />
           </div>
+          <div class="form-row">
+            <label for="companyMail">Company Email:</label>
+            <input type="email" id="companyMail" name="companyMail" />
+          </div>
+          <div class="form-row">
+            <label for="companyServices">Company Services:</label>
+            <textarea id="companyServices" name="companyServices"></textarea>
+          </div>
+          <div class="form-row">
+            <label for="companyBranches">Company Branches:</label>
+            <input type="text" id="companyBranches" name="companyBranches" />
+          </div>
+          <div class="form-row">
+            <label for="companyAddress">Company Address:</label>
+            <textarea id="companyAddress" name="companyAddress"></textarea>
+          </div>
+        </div>
+
+        <div class="group-row">
+          <h2>Add links below</h2>
           <div class="form-row">
             <label for="companyLogo">Company Logo Link:</label>
             <input type="text" id="companyLogo" name="companyLogo" />
@@ -151,87 +178,100 @@
             <label for="linkedinLink">LinkedIn Link:</label>
             <input type="text" id="linkedinLink" name="linkedinLink" />
           </div>
-          <div class="form-row">
-            <label for="companyMail">Company Email:</label>
-            <input type="email" id="companyMail" name="companyMail" />
-          </div>
-          <div class="form-row">
-            <label for="companyServices">Company Services:</label>
-            <textarea id="companyServices" name="companyServices"></textarea>
-          </div>
-          <div class="form-row">
-            <label for="companyBranches">Company Branches:</label>
-            <input type="text" id="companyBranches" name="companyBranches" />
-          </div>
-          <div class="form-row">
-            <label for="companyAddress">Company Address:</label>
-            <textarea id="companyAddress" name="companyAddress"></textarea>
-          </div>
         </div>
 
         <div class="group-row">
+          <h2>Upload images and add links below</h2>
           <div class="form-row">
-            <label for="partnerCompany1">Partner Company 1 Logo:</label>
+            <label for="partnerCompany1">Partner Company Image 1:</label>
             <input type="text" id="partnerCompany1" name="partnerCompany1" />
           </div>
           <div class="form-row">
-            <label for="partnerCompany2">Partner Company 2 Logo:</label>
+            <label for="partnerCompany2">Partner Company Image 2:</label>
             <input type="text" id="partnerCompany2" name="partnerCompany2" />
           </div>
           <div class="form-row">
-            <label for="partnerCompany3">Partner Company 3 Logo:</label>
+            <label for="partnerCompany3">Partner Company Image 3:</label>
             <input type="text" id="partnerCompany3" name="partnerCompany3" />
           </div>
           <div class="form-row">
-            <label for="partnerCompany4">Partner Company 4 Logo:</label>
+            <label for="partnerCompany4">Partner Company Image 4:</label>
             <input type="text" id="partnerCompany4" name="partnerCompany4" />
           </div>
-        </div>
-        <div class="group-row">
           <div class="form-row">
-            <label for="websiteLogo">Website Logo Image Link:</label>
-            <input type="text" id="websiteLogo" name="websiteLogo" />
-          </div>
-
-          <div class="form-row">
-            <label for="facebookLogo">Facebook Logo Image Link:</label>
+            <label for="facebookLogo">Facebook Image:</label>
             <input type="text" id="facebookLogo" name="facebookLogo" />
-          </div>
-
-          <div class="form-row">
-            <label for="instagramLogo">Instagram Logo Image Link:</label>
-            <input type="text" id="instagramLogo" name="instagramLogo" />
-          </div>
-
-          <div class="form-row">
-            <label for="twitterLogo">Twitter Logo Image Link:</label>
-            <input type="text" id="twitterLogo" name="twitterLogo" />
-          </div>
-
-          <div class="form-row">
-            <label for="linkedinLogo">LinkedIn Logo Image Link:</label>
-            <input type="text" id="linkedinLogo" name="linkedinLogo" />
-          </div>
-
-          <div class="form-row">
-            <label for="companyMailLogo">Company Mail Logo Image Link:</label>
-            <input type="text" id="companyMailLogo" name="companyMailLogo" />
-          </div>
-
-          <div class="form-row">
-            <label for="companyWebsiteLogo"
-              >Company Website Logo Image Link:</label
+            <button
+              class="download-logo"
+              data-download-logo="facebookLogo"
+              style="margin-left: 10px"
             >
-            <input
-              type="text"
-              id="companyWebsiteLogo"
-              name="companyWebsiteLogo"
-            />
+              Download
+            </button>
+          </div>
+
+          <div class="form-row">
+            <label for="instagramLogo">Instagram Image:</label>
+            <input type="text" id="instagramLogo" name="instagramLogo" />
+            <button
+              class="download-logo"
+              data-download-logo="instagramLogo"
+              style="margin-left: 10px"
+            >
+              Download
+            </button>
+          </div>
+
+          <div class="form-row">
+            <label for="twitterLogo">Twitter Image:</label>
+            <input type="text" id="twitterLogo" name="twitterLogo" />
+            <button
+              class="download-logo"
+              data-download-logo="twitterLogo"
+              style="margin-left: 10px"
+            >
+              Download
+            </button>
+          </div>
+
+          <div class="form-row">
+            <label for="linkedinLogo">LinkedIn Image:</label>
+            <input type="text" id="linkedinLogo" name="linkedinLogo" />
+            <button
+              class="download-logo"
+              data-download-logo="linkedinLogo"
+              style="margin-left: 10px"
+            >
+              Download
+            </button>
+          </div>
+
+          <div class="form-row">
+            <label for="websiteLogo">Website Icon Image:</label>
+            <input type="text" id="websiteLogo" name="websiteLogo" />
+            <button
+              class="download-logo"
+              data-download-logo="websiteLogo"
+              style="margin-left: 10px"
+            >
+              Download
+            </button>
+          </div>
+
+          <div class="form-row">
+            <label for="companyMailLogo">Mail Icon Image:</label>
+            <input type="text" id="companyMailLogo" name="companyMailLogo" />
+            <button
+              class="download-logo"
+              data-download-logo="companyMailLogo"
+              style="margin-left: 10px"
+            >
+              Download
+            </button>
           </div>
         </div>
 
         <div class="submit-row">
-          <!-- <button type="submit">Submit</button> -->
           <button
             id="previewTemplate"
             style="
