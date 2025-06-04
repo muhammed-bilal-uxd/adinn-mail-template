@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mail template preview</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="preview.js"></script>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <table
+      contenteditable="false"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="
+        width: 800px;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+        padding: 20px;
+      "
+    >
+      <tr>
+        <!-- LEFT COLUMN: Logo + Social Links -->
+        <td valign="top" style="width: 150px; padding: 10px 20px 10px 10px">
+          <!-- LOGO -->
+          <img
+            class="logo company-logo-aa"
+            src="https://iili.io/FJmG6yG.jpg"
+            alt="Company Logo"
+            style="
+              display: block;
+              width: 150px;
+              height: auto;
+              margin-bottom: 12px;
+            "
+          />
+
+          <!-- SOCIAL / WEBSITE LINKS -->
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="font-size: 14px; line-height: 1.4"
+          >
+            <tr>
+              <td style="padding-bottom: 6px">
+                <a
+                  class="website-link-aa"
+                  href="https://rdmedia.biz"
+                  target="_blank"
+                  style="text-decoration: none !important; color: #1a73e800"
+                >
+                  <img
+                    class="mini-icon website-logo-aa"
+                    src="https://iili.io/FJmUK3G.png"
+                    alt="Website"
+                    style="
+                      width: 20px;
+                      height: auto;
+                      vertical-align: middle;
+                      transform: scale(1.5);
+                    "
+                  />
+                  <span style="font-size: 13px; color: #000000">Website</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 6px">
+                <a
+                  class="company-facebook facebook-link-aa"
+                  href="https://www.facebook.com/people/RD-MEDIA/100064182964010/?rdid=hbtif4CGyTc005E6&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AWfWCzVfP%2F"
+                  target="_blank"
+                  style="text-decoration: none !important; color: #1a73e800"
+                >
+                  <img
+                    class="mini-icon facebook-logo-aa"
+                    src="https://iili.io/FJmU34s.png"
+                    alt="Facebook"
+                    style="width: 20px; height: auto; vertical-align: middle"
+                  />
+                  <span style="font-size: 13px; color: #000000">Facebook</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://www.instagram.com/r_d_media"
+                  class="company-instagram instagram-link-aa"
+                  target="_blank"
+                  style="text-decoration: none !important; color: #1a73e800"
+                >
+                  <img
+                    class="mini-icon instagram-logo-aa"
+                    src="https://iili.io/FJmU2Gn.png"
+                    alt="Instagram"
+                    style="width: 20px; height: auto; vertical-align: middle"
+                  />
+                  <span style="font-size: 13px; color: #000000">Instagram</span>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- RIGHT COLUMN: Company Info + Personal Details + Contact -->
+        <td
+          valign="top"
+          style="padding: 10px 10px 10px 20px; border-left: 1px solid #dddddd"
+        >
+          <!-- COMPANY NAME -->
+          <div
+            class="company-name-aa"
+            style="
+              font-size: 18px;
+              font-weight: bold;
+              color: #000000;
+              margin-bottom: 6px;
+            "
+          >
+            R&D MEDIA
+          </div>
+
+          <!-- ADDRESS LINES -->
+          <p
+            style="font-size: 14px; line-height: 1.4; margin-bottom: 10px"
+            class="company-address-aa"
+          >
+            Plot No: 314/4, 11th Street, Venkateshwara Colony, Nehru Nagar,
+            Kottivakkam, Chennai - 600 041. <br /><br />GSTN - 33CTOPR4994R1ZC
+            <br />PAN - CTOPR4994R
+          </p>
+
+          <!-- Table-based layout replacing the flex containers -->
+
+          <!-- First table: Name/Title on left, Phone numbers on right -->
+          <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+            <tr>
+              <!-- Left cell: Name and title -->
+              <td
+                style="
+                  padding-bottom: 10px;
+                  font-size: 14px;
+                  line-height: 1.4;
+                  vertical-align: top;
+                  width: 200px;
+                "
+              >
+                Regards,<br />
+                <span style="font-weight: bold">Gunaalan RD</span><br />
+                <span style="font-size: 13px; color: #555555">(CMO)</span>
+              </td>
+
+              <!-- Right cell: Phone numbers -->
+              <td
+                style="
+                  font-size: 14px;
+                  line-height: 1.4;
+                  white-space: nowrap;
+                  vertical-align: top;
+                "
+              >
+                <strong>Mobile:</strong> +91 97909 15348<br />
+                <strong>Phone:</strong> +91 75500 45348
+              </td>
+            </tr>
+
+            <tr>
+              <!-- Left cell: First set of emails -->
+              <td
+                style="font-size: 14px; line-height: 1.4; vertical-align: top"
+              >
+                <a
+                  href="mailto:gunaalan@rdmedia.biz"
+                  style="text-decoration: none; color: #1a73e8"
+                >
+                  gunaalan@rdmedia.biz
+                </a>
+                <br />
+                <a
+                  href="mailto:info@rdmedia.biz"
+                  style="text-decoration: none; color: #1a73e8"
+                >
+                  info@rdmedia.biz
+                </a>
+              </td>
+
+              <!-- Right cell: Second set of emails, aligned to the right -->
+              <td
+                style="font-size: 14px; line-height: 1.4; vertical-align: top"
+              >
+                <a
+                  href="mailto:sarojini@rdmedia.biz"
+                  style="text-decoration: none; color: #1a73e8"
+                >
+                  sarojini@rdmedia.biz
+                </a>
+                <br />
+                <a
+                  href="mailto:info@rdmedia.biz"
+                  style="text-decoration: none; color: #1a73e8"
+                >
+                  info@rdmedia.biz
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- DISCLAIMER ROW -->
+      <tr>
+        <td
+          colspan="2"
+          style="
+            padding-top: 12px;
+            font-size: 12px;
+            line-height: 1.3;
+            color: #777777;
+          "
+        >
+          <div>
+            The content of this email is confidential and intended for the
+            recipient specified in the message only. It is strictly forbidden to
+            share any part of this message with any third party, without a
+            written consent of the sender. If you received this message by
+            mistake, please reply to this message and delete it, so that we can
+            ensure such a mistake does not occur in the future.
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -177,7 +177,19 @@
         </div>
 
         <div class="group-row">
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: right;
+              gap: 10px;
+            "
+          >
+            <button id="uploadImages" class="upload-btn">Upload Images</button>
+          </div>
           <h2>Upload images and add links below</h2>
+
           <div class="form-row">
             <label for="companyLogo">Company Image :</label>
             <input type="text" id="companyLogo" name="companyLogo" />
@@ -272,23 +284,45 @@
         </div>
 
         <div class="submit-row">
-          <button
-            id="previewTemplate"
-            style="
-              padding: 10px 20px;
-              background: linear-gradient(45deg, #2196f3, #1976d2);
-              color: white;
-              border: none;
-              border-radius: 6px;
-              font-size: 14px;
-              font-weight: 500;
-              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-              transition: all 0.3s ease;
-              cursor: pointer;
-            "
-          >
-            Preview Template
-          </button>
+          <div style="display: flex; gap: 10px">
+            <button
+              class="preview-template"
+              data-version="1"
+              style="
+                padding: 10px 20px;
+                background: linear-gradient(45deg, #2196f3, #1976d2);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 14px;
+                font-weight: 500;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+                cursor: pointer;
+              "
+            >
+              Preview Template 1
+            </button>
+
+            <button
+              class="preview-template"
+              data-version="2"
+              style="
+                padding: 10px 20px;
+                background: linear-gradient(45deg, #2196f3, #1976d2);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 14px;
+                font-weight: 500;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+                cursor: pointer;
+              "
+            >
+              Preview Template 2
+            </button>
+          </div>
         </div>
       </div>
     </div>

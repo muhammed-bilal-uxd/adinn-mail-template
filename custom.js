@@ -1,6 +1,6 @@
 $(document).ready(function () {
+  $(".preview-template").on("click", previewTemplate);
   $("#dummyData").on("click", generateDummyData);
-  $("#previewTemplate").on("click", previewTemplate);
   $(".download-logo").on("click", downloadImage);
 });
 
@@ -76,7 +76,7 @@ function generateDummyData() {
   $("#companyWebsiteLogo").val(companyWebsiteLogo);
 }
 
-function previewTemplate() {
+function previewTemplate(event) {
   const formData = {};
   const formValues = getDataParams();
 
@@ -93,8 +93,13 @@ function previewTemplate() {
     params.append(key, value);
   }
 
+  const version = event.currentTarget.getAttribute("data-version");
+
   // Open preview in new tab/window
-  window.open(`preview.html?${params.toString()}`, "_blank");
+  window.open(
+    `./template-${version}/preview.html?${params.toString()}`,
+    "_blank"
+  );
 }
 
 function downloadImage(event) {
